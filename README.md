@@ -60,7 +60,8 @@ You can use tools like Postman or curl, or you can create a simple HTML form to 
 Once you have uploaded a spreadsheet and created a dynamic model, you can view the data using the Django REST Framework's browsable API. Navigate to the following URL in your browser:
 
 ```
-curl -X POST -H "Content-Type: multipart/form-data" -F "file=@path/to/your/spreadsheet.xlsx" -F "table_name=test_table" http://localhost:8000/api/v1/spreadsheet/test_table/```
+curl -X POST -H "Content-Type: multipart/form-data" -F "file=@path/to/your/spreadsheet.xlsx" -F "table_name=test_table" http://localhost:8000/api/v1/spreadsheet/test_table/
+```
 
 Replace `myapp` with the name of your Django app and `test_table` with the name of the dynamic model you created.
 
